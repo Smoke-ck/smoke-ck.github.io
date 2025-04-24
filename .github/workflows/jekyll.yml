@@ -28,7 +28,7 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
   deploy:
     runs-on: ubuntu-22.04
     needs: build
